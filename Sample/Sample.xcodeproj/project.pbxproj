@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		345D1466253EE73A004AE210 /* OneFootballProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D1465253EE73A004AE210 /* OneFootballProfileViewController.swift */; };
 		3488FDEA250E6B190069E86A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3488FDE9250E6B190069E86A /* AppDelegate.swift */; };
 		3488FDEC250E6B190069E86A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3488FDEB250E6B190069E86A /* SceneDelegate.swift */; };
 		3488FDF1250E6B190069E86A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3488FDEF250E6B190069E86A /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		345D1465253EE73A004AE210 /* OneFootballProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneFootballProfileViewController.swift; sourceTree = "<group>"; };
 		3488FDE6250E6B190069E86A /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3488FDE9250E6B190069E86A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3488FDEB250E6B190069E86A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				3488FDF7250E6B1F0069E86A /* Info.plist */,
 				34D0C17025110E3F004F750F /* LoginViewController.swift */,
 				34D0C17225110E82004F750F /* WelcomeViewController.swift */,
+				345D1465253EE73A004AE210 /* OneFootballProfileViewController.swift */,
 			);
 			path = Sample;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				34D0C17125110E3F004F750F /* LoginViewController.swift in Sources */,
 				34D0C17325110E82004F750F /* WelcomeViewController.swift in Sources */,
 				3488FDEA250E6B190069E86A /* AppDelegate.swift in Sources */,
+				345D1466253EE73A004AE210 /* OneFootballProfileViewController.swift in Sources */,
 				3488FDEC250E6B190069E86A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
