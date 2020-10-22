@@ -20,6 +20,8 @@ class HomeViewController: UIViewController {
         // 1. register
         collectionViewRoomItemList.register(UINib(nibName: RoomItemCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: RoomItemCollectionViewCell.identifier)
         
+        collectionViewRoomItemList.register(UINib(nibName: CreateRoomItemCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: CreateRoomItemCollectionViewCell.identifier)
+        
         collectionViewRoomItemList.contentInset = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 8)
         
         // 2. datasource
@@ -34,18 +36,29 @@ class HomeViewController: UIViewController {
 extension HomeViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 20
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RoomItemCollectionViewCell.identifier, for: indexPath) as! RoomItemCollectionViewCell
-        return cell
+        if indexPath.row == 0 {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CreateRoomItemCollectionViewCell.identifier, for: indexPath) as! CreateRoomItemCollectionViewCell
+            return cell
+        } else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RoomItemCollectionViewCell.identifier, for: indexPath) as! RoomItemCollectionViewCell
+            return cell
+        }
+        
     }
 }
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     // sizeforItemAt
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 53, height: 61)
+        if indexPath.row == 0 {
+            return CGSize(width: 123, height: 61)
+        } else {
+            return CGSize(width: 53, height: 61)
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
