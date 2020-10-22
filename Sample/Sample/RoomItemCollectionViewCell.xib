@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="RoomItemCollectionViewCell" customModule="Sample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="53" height="61"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="53" height="61"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8el-xG-Cmd">
+                        <rect key="frame" x="4" y="8" width="45" height="45"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pp" translatesAutoresizingMaskIntoConstraints="NO" id="Dfh-LB-cL1">
+                                <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="UZO-d3-2wp"/>
+                                    <constraint firstAttribute="height" constant="45" id="zAp-Lr-DYz"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MxK-WV-inu">
+                                <rect key="frame" x="29" y="29" width="16" height="16"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ONK-hq-duT">
+                                        <rect key="frame" x="2" y="2" width="12" height="12"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="12" id="6Y7-sg-jpw"/>
+                                            <constraint firstAttribute="width" constant="12" id="kty-lJ-CZE"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="DpN-hi-zbn"/>
+                                    <constraint firstItem="ONK-hq-duT" firstAttribute="centerY" secondItem="MxK-WV-inu" secondAttribute="centerY" id="JQL-HF-R5H"/>
+                                    <constraint firstItem="ONK-hq-duT" firstAttribute="centerX" secondItem="MxK-WV-inu" secondAttribute="centerX" id="Xan-GH-9aZ"/>
+                                    <constraint firstAttribute="height" constant="16" id="dAO-MQ-Iz6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="MxK-WV-inu" firstAttribute="trailing" secondItem="Dfh-LB-cL1" secondAttribute="trailing" id="4aB-me-Kty"/>
+                            <constraint firstItem="Dfh-LB-cL1" firstAttribute="top" secondItem="8el-xG-Cmd" secondAttribute="top" id="APa-v1-lKQ"/>
+                            <constraint firstItem="MxK-WV-inu" firstAttribute="bottom" secondItem="Dfh-LB-cL1" secondAttribute="bottom" id="Pwg-W8-jX1"/>
+                            <constraint firstItem="Dfh-LB-cL1" firstAttribute="leading" secondItem="8el-xG-Cmd" secondAttribute="leading" id="uSw-Zq-VbN"/>
+                            <constraint firstAttribute="trailing" secondItem="Dfh-LB-cL1" secondAttribute="trailing" id="xSb-IB-pui"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="8el-xG-Cmd" secondAttribute="bottom" constant="8" id="KYf-06-fig"/>
+                <constraint firstItem="8el-xG-Cmd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="Yt6-AZ-gu5"/>
+                <constraint firstItem="8el-xG-Cmd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="hmf-bX-fK7"/>
+                <constraint firstAttribute="trailing" secondItem="8el-xG-Cmd" secondAttribute="trailing" constant="4" id="soN-uU-wC6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="85" height="77"/>
+            <connections>
+                <outlet property="innerView" destination="ONK-hq-duT" id="UQT-xT-OZ3"/>
+                <outlet property="ivProfileImage" destination="Dfh-LB-cL1" id="b6N-8q-WEd"/>
+                <outlet property="outterView" destination="MxK-WV-inu" id="1L8-xF-3AZ"/>
+            </connections>
+            <point key="canvasLocation" x="163.04347826086959" y="123.54910714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="pp" width="512" height="512"/>
+    </resources>
+</document>
